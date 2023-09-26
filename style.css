@@ -1,0 +1,86 @@
+/* Author: Sean Cravener */
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+/* Global styles */
+:root {
+  /* Primary Colors */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --very-light-gray-blue: hsl(210, 60%, 98%);
+  --light-gray-blue-one: hsl(211, 68%, 94%);
+  --light-gray-blue-two: hsl(205, 33%, 90%);
+  --gray-blue: hsl(219, 14%, 63%);
+  --dark-gray-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+
+  /* Font Sizes */
+  --body-font-size: 15px;
+
+  /* Font Family */
+  --font-family: "Plus Jakarta Sans", sans-serif;
+
+  /* Font Weights */
+  --font-normal: 500;
+  --font-bold: 800;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: var(--body-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-normal);
+  background-color: var(--very-light-gray-blue);
+  color: black;
+  display: flex;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.notifications__container {
+  max-width: 750px;
+  margin: auto;
+  background-color: var(--white);
+  padding: 1.5rem;
+}
+
+.notifications__top {
+  display: flex;
+
+  & :last-child {
+    margin-left: auto;
+  }
+}
+
+.notification {
+  margin: 1rem 0;
+  display: flex;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
