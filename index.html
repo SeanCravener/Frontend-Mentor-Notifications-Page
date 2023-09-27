@@ -15,42 +15,44 @@
   <body>
     <section class="notifications__container">
       <div class="notifications__top">
-        <p>Notifications <span id="notification__count">3</span></p>
-        <p id="mark__read">Mark all as read</p>
+        <p>Notifications <span id="notification-count">3</span></p>
+        <p id="mark-all-read">Mark all as read</p>
       </div>
       <div class="notifications__bottom">
-        <div class="notification">
+        <div class="notification unread">
           <img
             src="assets/images/avatar-mark-webber.webp"
             alt="Mark Webber Profile Picture"
           />
           <div>
             <p>
-              <span>Mark Webber</span> reacted to your recent post
-              <a href="">My first tournament today!</a>
+              <a class="notification__profile">Mark Webber</a> reacted to your
+              recent post
+              <a>My first tournament today!</a>
             </p>
             <p>1m ago</p>
           </div>
         </div>
-        <div class="notification">
+        <div class="notification unread">
           <img
             src="assets/images/avatar-angela-gray.webp"
             alt="Angela Gray Profile Picture"
           />
           <div>
-            <p><span>Angela Gray</span> followed you</p>
+            <p><a class="notification__profile">Angela Gray</a> followed you</p>
             <p>5m ago</p>
           </div>
         </div>
-        <div class="notification">
+        <div class="notification unread">
           <img
             src="assets/images/avatar-jacob-thompson.webp"
             alt="Jacob Thompson Profile Picture"
           />
           <div>
             <p>
-              <span>Jacob Thompson</span> has joined your group
-              <a href="">Chess Club</a>
+              <a class="notification__profile">Jacob Thompson</a> has joined
+              your group
+              <a>Chess Club</a>
             </p>
             <p>1 day ago</p>
           </div>
@@ -61,9 +63,12 @@
             alt="Rizky Hasanuddin Profile Picture"
           />
           <div>
-            <p><span>Rizky Hasanuddin</span> sent you a private message</p>
-            <p>5 days ago</p>
             <p>
+              <a class="notification__profile">Rizky Hasanuddin</a> sent you a
+              private message
+            </p>
+            <p>5 days ago</p>
+            <p class="notification__message">
               Hello, thanks for setting up the Chess Club. I've been a member
               for a few weeks now and I'm already having lots of fun and
               improving my game.
@@ -76,7 +81,10 @@
             alt="Kimberly Smith Profile Picture"
           />
           <div>
-            <p><span>Kimberly Smith</span> commented on your picture</p>
+            <p>
+              <a class="notification__profile">Kimberly Smith</a> commented on
+              your picture
+            </p>
             <p>1 week ago</p>
           </div>
         </div>
@@ -87,8 +95,9 @@
           />
           <div>
             <p>
-              <span>Nathan Peterson</span> reacted to your recent post
-              <a href="">5 end-game strategies to increase your win rate</a>
+              <a class="notification__profile">Nathan Peterson</a> reacted to
+              your recent post
+              <a>5 end-game strategies to increase your win rate</a>
             </p>
             <p>2 weeks ago</p>
           </div>
@@ -100,7 +109,8 @@
           />
           <div>
             <p>
-              <span>Anna Kim</span> left the group <a href="">Chess Club</a>
+              <a class="notification__profile">Anna Kim</a> left the group
+              <a href="">Chess Club</a>
             </p>
             <p>2 weeks ago</p>
           </div>
@@ -113,5 +123,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://seancravener.com/">Sean Cravener</a>.
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
