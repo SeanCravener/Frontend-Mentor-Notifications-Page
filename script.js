@@ -12,7 +12,10 @@ countElement.innerText = count;
 // Decrements the notification count
 // Removes the event listener from the notification message
 const markReadHandler = (event) => {
-  const notification = event.target;
+  const notification = event.currentTarget;
+  if (notification !== event.target) {
+    return;
+  }
   notification.classList.remove("unread");
   --count;
   countElement.innerText = count;

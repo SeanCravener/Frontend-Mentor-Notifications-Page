@@ -18,14 +18,16 @@ Users should be able to:
 
 ## My process
 
+Since I've been spending a lot of time working with React JS I wanted to build this with just vanilla Javascript. I've also tried messing around a lot of CSS nesting and pseudo selectors.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS Nesting and Pseudo Selectors
 - Mobile-first workflow
-- Vanilla JS for DOM Manipulation
+- Vanilla JS
 
 ## Author
 
